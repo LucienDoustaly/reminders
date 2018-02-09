@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<b:row xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:b="http://bootsfaces.net/ui" xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+    <h:inputHidden value="#{toDoBackingBean.todo.id}" />
+    <h:inputHidden value="#{toDoBackingBean.todo.version}" />
+    <b:column medium-screen="full">
+        <b:inputText id="caption" style="width: 250px;" label="Caption" render-label="true" label-style="width:150px"
+                     value="#{toDoBackingBean.todo.caption}" pt:autofocus="true"/>
+        <h:message for="caption"/>
+    </b:column>
+    <b:column medium-screen="full">
+        <b:inputTextarea style="width: 250px;" label="Description" render-label="true" label-style="width:150px"
+                         value="#{toDoBackingBean.todo.description}"/>
+    </b:column>   
+    <b:column medium-screen="full">
+        <b:inputText id="contexts" style="width: 250px;" label="Contexts" render-label="true" label-style="width:150px"
+                     value="#{toDoBackingBean.todo.contexts}" converter="contextsConverter" pt:autofocus="true"/>
+        <h:message for="caption"/>
+    </b:column> 
+</b:row>

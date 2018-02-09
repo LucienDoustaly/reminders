@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                template="./WEB-INF/template.xhtml"
+                xmlns:b="http://bootsfaces.net/ui"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:define name="content">
+        <h1>ToDo List</h1>
+        <hr/>
+        <h:panelGrid columns="4" cellpadding="10" class="button-panel">
+            <b:button outcome="add-todo" value="New ToDo" icon="plus"/>
+            <b:button outcome="search-todos" value="Search ToDo" icon="search"/>
+        </h:panelGrid>
+        <b:messages/>
+        <h:form id="toDoForm">
+            <b:dataTable id="toDoTable" value="#{toDoBackingBean.toDos}" var="todo">
+                <b:dataTableColumn value="#{todo.id}" />
+                <b:dataTableColumn label="Done" orderable="false" searchable="false">
+                    <b:selectBooleanCheckbox value="#{todo.done}">
+                        <f:ajax event="change" listener="#{toDoBackingBean.changeStatus(todo)}" render="toDoForm" />
+                    </b:selectBooleanCheckbox>
+                </b:dataTableColumn>                
+                <b:dataTableColumn value="#{todo.caption}" />
+                <b:dataTableColumn value="#{todo.description}" />
+                <b:dataTableColumn orderable="false">
+                    <f:facet name="header">
+                        <ul style="margin-bottom: 0; list-style-type: none; padding-left: 0">
+                          <li>Contexts</li>
+                        </ul>
+                    </f:facet>
+                    <ui:repeat var="context" value="#{todo.contexts}">
+                         <b:label text="#{context}"/>
+                         &nbsp;
+                    </ui:repeat>
+                </b:dataTableColumn>
+                <b:dataTableColumn label="Actions" orderable="false" searchable="false">
+                    <h:commandLink value="Edit" action="#{toDoBackingBean.editToDo(todo)}" />&nbsp;
+                    <h:commandLink id="remove" value="Delete" action="#{toDoBackingBean.removeToDo(todo)}"
+                                   onclick="return confirm('Are you sure?')">
+                        <f:ajax render="toDoForm" />
+                    </h:commandLink>
+                </b:dataTableColumn>
+            </b:dataTable>
+        </h:form>
+    </ui:define>
+
+</ui:composition>

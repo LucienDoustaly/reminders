@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <body>
+        <ui:composition template="./WEB-INF/template.xhtml">
+            <ui:define name="content">
+                <b:jumbotron>
+                    <b:container>
+                        <h1>Reminders</h1>
+                        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. 
+                            Use it as a starting point to create something more unique.
+                        </p>
+                        <p>
+                            <h:form>
+                                <b:button size="lg" look="info" icon="list-alt" value="ToDo List" outcome="list-todos" />                                
+                            </h:form>
+                        </p>
+                    </b:container>
+                </b:jumbotron>                
+                <b:row>                    
+                    <b:column col-md="4">
+                        <h2>Heading</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
+                            ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                        <p><b:button outcome="" value="View details "/></p>
+                    </b:column>
+                    <b:column col-md="4">
+                        <h2>Heading</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
+                            ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                        <p><b:button outcome="" value="View details "/></p>
+                    </b:column>
+                    <b:column col-md="4">
+                        <h2>Heading</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, 
+                            ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                        <p><b:button outcome="" value="View details "/></p>
+                    </b:column>
+                </b:row>
+            </ui:define>
+        </ui:composition>
+    </body>
+</html>
