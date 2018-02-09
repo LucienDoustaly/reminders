@@ -1,6 +1,5 @@
 package com.javaee.exercises.reminders.business.todos.boundary;
 
-
 import com.javaee.exercises.reminders.business.todos.entity.ToDo;
 import java.util.List;
 import javax.ejb.Stateless;
@@ -29,5 +28,9 @@ public class ToDoManager {
             this.em.remove(reference);
         } catch (EntityNotFoundException e) {
         }
+    }
+
+    public ToDo findById(long id) {
+        return this.em.find(ToDo.class, id);
     }
 }

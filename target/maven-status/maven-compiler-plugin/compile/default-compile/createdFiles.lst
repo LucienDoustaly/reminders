@@ -1,8 +1,10 @@
-com\javaee\exercises\reminders\business\todos\entity\ToDo_.class
-com\javaee\exercises\reminders\business\Contexts.class
+com\javaee\exercises\reminders\presentation\ToDoSearchBackingBean.class
 com\javaee\exercises\reminders\business\todos\boundary\ToDoManager.class
-com\javaee\exercises\reminders\presentation\ContextsConverter.class
-com\javaee\exercises\reminders\business\ContextsValidator.class
 com\javaee\exercises\reminders\business\todos\entity\ToDo.class
 com\javaee\exercises\reminders\presentation\ToDoBackingBean.class
-com\javaee\exercises\reminders\presentation\ToDoSeachBackingBean.class
+com\javaee\exercises\reminders\business\todos\entity\ToDo_.class
+com\javaee\exercises\reminders\business\Contexts.class
+com\javaee\exercises\reminders\presentation\ContextsConverter.class
+com\javaee\exercises\reminders\business\ContextsValidator.class
+com\javaee\exercises\reminders\business\JAXRSConfiguration.class
+com\javaee\exercises\reminders\business\todos\boundary\TodosResource.class

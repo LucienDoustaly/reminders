@@ -1,7 +1,10 @@
-D:\Documents\ISEN\Cours\ISEN\Informatique\JavaEE\sceance3\Test\Reminders\reminders\src\main\java\com\javaee\exercises\reminders\business\ContextsValidator.java
-D:\Documents\ISEN\Cours\ISEN\Informatique\JavaEE\sceance3\Test\Reminders\reminders\src\main\java\com\javaee\exercises\reminders\business\todos\entity\ToDo.java
-D:\Documents\ISEN\Cours\ISEN\Informatique\JavaEE\sceance3\Test\Reminders\reminders\src\main\java\com\javaee\exercises\reminders\presentation\ToDoSeachBackingBean.java
-D:\Documents\ISEN\Cours\ISEN\Informatique\JavaEE\sceance3\Test\Reminders\reminders\src\main\java\com\javaee\exercises\reminders\presentation\ToDoBackingBean.java
-D:\Documents\ISEN\Cours\ISEN\Informatique\JavaEE\sceance3\Test\Reminders\reminders\src\main\java\com\javaee\exercises\reminders\business\Contexts.java
-D:\Documents\ISEN\Cours\ISEN\Informatique\JavaEE\sceance3\Test\Reminders\reminders\src\main\java\com\javaee\exercises\reminders\presentation\ContextsConverter.java
-D:\Documents\ISEN\Cours\ISEN\Informatique\JavaEE\sceance3\Test\Reminders\reminders\src\main\java\com\javaee\exercises\reminders\business\todos\boundary\ToDoManager.java
+D:\Documents\ISEN\Cours\ISEN\Informatique\JavaEE\sceance3\reminders\src\main\java\com\javaee\exercises\reminders\presentation\ToDoBackingBean.java
+D:\Documents\ISEN\Cours\ISEN\Informatique\JavaEE\sceance3\reminders\src\main\java\com\javaee\exercises\reminders\business\JAXRSConfiguration.java
+D:\Documents\ISEN\Cours\ISEN\Informatique\JavaEE\sceance3\reminders\src\main\java\com\javaee\exercises\reminders\business\ContextsValidator.java
+D:\Documents\ISEN\Cours\ISEN\Informatique\JavaEE\sceance3\reminders\src\main\java\com\javaee\exercises\reminders\business\todos\boundary\TodosResource.java
+D:\Documents\ISEN\Cours\ISEN\Informatique\JavaEE\sceance3\reminders\src\main\java\com\javaee\exercises\reminders\presentation\ContextsConverter.java
+D:\Documents\ISEN\Cours\ISEN\Informatique\JavaEE\sceance3\reminders\src\main\java\com\javaee\exercises\reminders\business\Contexts.java
+D:\Documents\ISEN\Cours\ISEN\Informatique\JavaEE\sceance3\reminders\src\main\java\com\javaee\exercises\reminders\business\todos\boundary\ToDoManager.java
+D:\Documents\ISEN\Cours\ISEN\Informatique\JavaEE\sceance3\reminders\src\main\java\com\javaee\exercises\reminders\business\todos\boundary\ToDoResource.java
+D:\Documents\ISEN\Cours\ISEN\Informatique\JavaEE\sceance3\reminders\src\main\java\com\javaee\exercises\reminders\business\todos\entity\ToDo.java
+D:\Documents\ISEN\Cours\ISEN\Informatique\JavaEE\sceance3\reminders\src\main\java\com\javaee\exercises\reminders\presentation\ToDoSearchBackingBean.java

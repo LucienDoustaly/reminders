@@ -22,6 +22,9 @@ import javax.persistence.TemporalType;
 import javax.persistence.Version;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
@@ -29,6 +32,8 @@ import javax.validation.constraints.Size;
  */
 @Entity
 @NamedQuery(name = ToDo.findAll, query = "SELECT t FROM ToDo t")
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class ToDo {
 
     @Id
