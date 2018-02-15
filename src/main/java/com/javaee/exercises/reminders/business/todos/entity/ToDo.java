@@ -31,7 +31,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  * @author ldoustaly
  */
 @Entity
-@NamedQuery(name = ToDo.findAll, query = "SELECT t FROM ToDo t")
+@NamedQuery(name = ToDo.findAll, query = "SELECT t FROM ToDo t ORDER BY t.done asc, t.updated desc")
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 public class ToDo {
